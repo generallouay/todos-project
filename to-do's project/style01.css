@@ -1,0 +1,177 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(-95deg , #0AA4A2 , #7EF0B1);
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    min-height: 100vh;
+   
+}
+.header{
+    font-size: 1.6rem;
+
+}
+
+.header , form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input , button {
+    padding: 0.6rem;
+    font-size: 1.3rem;
+    border-radius: 0.7rem;
+    border: none;
+
+}
+input{
+    width: 40vw;
+    
+}
+
+
+.addNoteBtn{
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: #35C0A7;
+    transition: all 0.4s ease;
+}
+.addNoteBtn:hover{
+    color: white;
+    background-color: #35C0A7;
+    box-shadow: inset 1px 1px 14px 2px;
+}
+.notesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.notesList{
+    list-style: none;
+    min-width: 40%;
+}
+
+.NTC{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: all .5s ease;
+}
+
+.note{
+    flex: 1;
+    background-color: white;
+    color: black;
+    font-size: 1.3rem;
+    height: auto;
+    border-radius: 0.7rem;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+
+
+}
+.completedBtn{
+    margin-right: 8px;
+    color: #33BFA7;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.completedBtn:hover{
+    background-color: #fff;
+    color: #27D200;
+}
+
+.deleteBtn {
+    color: #31BEA7;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.deleteBtn:hover{
+    background-color: #fff;
+    color: rgb(252, 0, 0);
+}
+.noteContent {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.fas{
+    pointer-events: none;
+}
+.done{
+    opacity: 50%;
+
+}
+.fallAnimation{
+    /* transform: translateY(10rem) rotate(40deg); */
+    transform: scale(2, 0.5);
+    opacity: 0;
+}
+
+.fallAnimation02{
+    transform: translate(7rem) rotate(50deg);
+    opacity: 0;
+}
+
+/* .select{
+    background-color: black;
+    height: 40px;
+} */
+
+select {
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border-radius: 0.7rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    color: #0FA7A2;
+    width: 9rem;
+    margin-left: 0.5rem;
+    
+}
+.select{
+    position: relative;
+}
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    left: 114px;
+    top: 0px;
+    color: #24B5A5;
+    font-size: 1.3rem;
+    background: white;
+    pointer-events: none;
+    padding: 0.57rem;
+    border-radius: 0px 10px 10px 0px;
+
+
+}
+.select:hover::after {
+    background: #24B5A5; 
+    color: white;
+    box-shadow: inset 1px 1px 14px 2px;
+    transition: all 0.4s ease;
+ }
+
+
+
+option {
+    font-weight: bold;
+}
+
+
